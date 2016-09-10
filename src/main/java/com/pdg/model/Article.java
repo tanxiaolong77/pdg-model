@@ -37,7 +37,7 @@ public class Article  implements java.io.Serializable{
      * 
      * @NotNull 
      */	
-	private java.lang.String category;	
+	private java.lang.Long categoryId;	
     /**
      * 封面图片地址       db_column: cover_url  
      * 
@@ -72,6 +72,9 @@ public class Article  implements java.io.Serializable{
 	private java.lang.Long userId;
 	
 	//columns END
+	
+	private java.lang.String categoryName;
+
 
 	public Article(){
 	}
@@ -114,14 +117,14 @@ public class Article  implements java.io.Serializable{
 
 
 
-	public java.lang.String getCategory() {
-		return category;
+	public java.lang.Long getCategoryId() {
+		return categoryId;
 	}
 
 
 
-	public void setCategory(java.lang.String category) {
-		this.category = category;
+	public void setCategoryId(java.lang.Long categoryId) {
+		this.categoryId = categoryId;
 	}
 
 
@@ -196,14 +199,20 @@ public class Article  implements java.io.Serializable{
 		this.userId = userId;
 	}
 
+	public java.lang.String getCategoryName() {
+		return categoryName;
+	}
 
+	public void setCategoryName(java.lang.String categoryName) {
+		this.categoryName = categoryName;
+	}
 
 	public String toString() {
 		return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
 			.append("Id",getId())
 			.append("Title",getTitle())
 			.append("Subtitle",getSubtitle())
-			.append("Category",getCategory())
+			.append("CategoryId",getCategoryId())
 			.append("CoverUrl",getCoverUrl())
 			.append("Summary",getSummary())
 			.append("Content",getContent())
