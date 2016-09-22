@@ -92,7 +92,7 @@ public class MainVo {
 	}
 
 	public void setFormerStudent(List formerStudent) {
-		formerStudent = formerStudent;
+		this.formerStudent = formerStudent;
 	}
 
 	public List getSchoolEnvironment() {
@@ -108,7 +108,7 @@ public class MainVo {
 	}
 
 	public void setFAQs(List fAQs) {
-		FAQs = fAQs;
+		this.FAQs = fAQs;
 	}
 
 	public List getNewsReport() {
