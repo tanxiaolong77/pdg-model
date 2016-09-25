@@ -14,8 +14,10 @@ public class SysUser implements java.io.Serializable {
 	
 	private java.lang.Long id;
 	
-	private java.lang.String username; 
-    
+	private java.lang.String username;
+	
+	private java.lang.String nickname;
+
 	private java.lang.String password; 
     
 	private java.lang.String userType;
@@ -39,6 +41,14 @@ public class SysUser implements java.io.Serializable {
 
 	public void setUsername(java.lang.String username) {
 		this.username = username;
+	}
+
+	public java.lang.String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(java.lang.String nickname) {
+		this.nickname = nickname;
 	}
 
 	public java.lang.String getPassword() {
@@ -77,6 +87,7 @@ public class SysUser implements java.io.Serializable {
 		return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
 			.append("Id",getId())
 			.append("Username",getUsername())
+			.append("nickName",getNickname())
 			.append("UserType",getUserType())
 			.append("CreateTime",getCreateTime())
 			.append("Status",getStatus())
