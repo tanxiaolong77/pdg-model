@@ -70,6 +70,18 @@ public class MainVo {
 	 * 宠物热点
 	 */
 	private List petHotSpots;
+	
+	/***
+	 * 实操课程
+	 */
+	private List practicalCourse;
+	
+	/***
+	 * 医疗课程
+	 */
+	private List medicalCourses;
+	
+
 
 	public List getSchoolDynamic() {
 		return schoolDynamic;
@@ -165,5 +177,21 @@ public class MainVo {
 
 	public void setPetHotSpots(List petHotSpots) {
 		this.petHotSpots = petHotSpots;
+	}
+
+	public List getPracticalCourse() {
+		return practicalCourse;
+	}
+
+	public void setPracticalCourse(List practicalCourse) {
+		this.practicalCourse = practicalCourse;
+	}
+
+	public List getMedicalCourses() {
+		return medicalCourses;
+	}
+
+	public void setMedicalCourses(List medicalCourses) {
+		this.medicalCourses = medicalCourses;
 	}
 }
